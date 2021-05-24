@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <title> CSS Grid </title>
+            <style>
+                .wrapper {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 20px;
+                    font-family: sans-serif;
+                }
+                .box1 {
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+            }
+            .card_image {
+                width: 100%;
+                display: block;
+            }
+            .card_content {
+                line-height: 1.5;
+                font-size: 0.9m;
+                padding: 15px;
+                background: #fafafa;
+            }
+            .card_content >p:first-of-type {
+                margin-top: 0;
+            }
+            .card_content >p:last-of-type {
+                margin-bottom: 0;
+            }
+            .card_info {
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #eee;
+                font-size: 0.8m;
+                border-bottom: 2px solid #ccc;
+            }
+            .card_link {
+                color: #64968c;
+                text-decoration: none;
+            }
+            .card_link:hover{
+                text-decoration: underline;
+            }
+            header {
+            background-color: #068;
+            color: white;
+            font-family: Tahoma;
+            }
+            header nav ul {
+                list-style-type: none;
+                display: flex;
+            }
+            header nav ul li a {
+                text-decoration: none;
+                color: white;
+            }
+            header nav ul li {
+                margin: auto;
+                padding: 10px;
+            }
+        </style> 
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="./index.html"> Index Page </a> </li>
+                    <li> <a href="./aboutme.html"> About Me </a> </li>
+                    <li> <a href="./registration.html"> Registration </a> </li>
+                    <li> <a href="./loginpage.html"> Login Page </a> </li>
+                    <li> <a href="./contactus.html"> Contact Us </a> </li>
+                    <li> <a href="./content.html"> Content Page </a> </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+                <div class="box1">
+                    <img src="./kunal-shinde--f0YLss50Bs-unsplash.jpg" alt="" class="card_image">
+                    <div class="card_content">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta et qui perspiciatis corporis a tempora illo eum beatae eligendi earum sunt hic architecto, dolore vel maxime labore nobis id dignissimos. </p>
+                        <p> Doctor 1 </p>
+                    </div>
+                    <div class="card_info">
+                        <div> 500 </div>
+                        <div> <a class="card_link"> View Article </a> </div>
+                    </div>  
+                    </div>
+            <div class="box1">
+                <img src="./kunal-shinde--f0YLss50Bs-unsplash.jpg" alt="" class="card_image">
+                <div class="card_content">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta et qui perspiciatis corporis a tempora illo eum beatae eligendi earum sunt hic architecto, dolore vel maxime labore nobis id dignissimos. </p>
+                    <p> Doctor 2 </p>
+                </div>
+                <div class="card_info">
+                    <div> 500 </div>
+                    <div> <a class="card_link"> View Article </a> </div>
+                </div>  
+            </div>
+            <div class="box1">
+                <img src="./kunal-shinde--f0YLss50Bs-unsplash.jpg" alt="" class="card_image">
+                <div class="card_content">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta et qui perspiciatis corporis a tempora illo eum beatae eligendi earum sunt hic architecto, dolore vel maxime labore nobis id dignissimos. </p>
+                    <p> Doctor 3 </p>
+                </div>
+                <div class="card_info">
+                    <div> 500 </div>
+                    <div> <a class="card_link"> View Article </a> </div>
+                </div>  
+            </div>
+            <div class="box1">
+                <img src="./kunal-shinde--f0YLss50Bs-unsplash.jpg" alt="" class="card_image">
+                <div class="card_content">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta et qui perspiciatis corporis a tempora illo eum beatae eligendi earum sunt hic architecto, dolore vel maxime labore nobis id dignissimos. </p>
+                    <p> Doctor 4 </p>
+                </div>
+                <div class="card_info">
+                    <div> 500 </div>
+                    <div> <a class="card_link"> View Article </a> </div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
